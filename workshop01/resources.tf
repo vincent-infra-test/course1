@@ -52,3 +52,7 @@ resource "local_file" "nginx_doc" {
 output "mynginx_fingerprint" {
     value = digitalocean_ssh_key.mynginx_key.fingerprint
 }
+
+output "mynginx_ip_address" {
+    value = digitalocean_droplet.mynginx.ipv4_address
+}
