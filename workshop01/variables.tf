@@ -5,11 +5,6 @@ variable "DO_key" {
     sensitive = true
 }
 
-/*variable "public_key_name" {
-    type = string
-    default = "Vince-SSH"
-}*/
-
 variable "public_key" {
     type = string
 }
