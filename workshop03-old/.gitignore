@@ -1,7 +1,0 @@
-terraform.tfvars
-*.tfvars
-*.tfstate
-*.tfstate.backup
-.terraform/
-variables.pkvars.hcl
-*.pkvars.hcl
