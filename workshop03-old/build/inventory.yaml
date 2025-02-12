@@ -1,0 +1,20 @@
+all:
+  vars:
+    ansible_user: root
+    ansible_connection: ssh
+    ansible_ssh_private_key_file: /home/fred/.ssh/DOKey
+  hosts:
+    mynginx:
+      #ansible_host: 178.128.106.75
+      ansible_host: "{{ hostvars['localhost']['ansible_host'] }}"
+      packages_to_install:
+      - name: nginx
+        to_install: present
+      - name: zip
+        to_install: present
+      - name: curl
+        to_install: present
+      - name: tar
+        to_install: present
+      code_server_domain: code-{{ ansible_host }}.nip.io
+      code_server_password: 123456
