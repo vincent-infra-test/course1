@@ -1,0 +1,3 @@
+To build the packer golden image:
+  cd /home/fred/course/workshop03/build
+  packer build -var-file=secrets.pkrvars.hcl .

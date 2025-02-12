@@ -1,0 +1,5 @@
+To Terraform provisioning:
+  cd /home/fred/course/workshop03/deploy
+  tf plan -var-file=secrets.tfvars -var "code_server_password=123456"
+  tf apply -auto-approve -var-file=secrets.tfvars -var "code_server_password=123456"
+  
